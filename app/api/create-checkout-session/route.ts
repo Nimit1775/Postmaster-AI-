@@ -30,10 +30,9 @@ export async  function POST(req : Request ) {
 
         }) ; 
         return NextResponse.json({ sessionId : session.id}) ; 
-
-    }catch(error : any){
+    }catch(error){
         console.error("Error creating checkout session:", error);
-    return NextResponse.json(
+    return NextResponse.json( //@ts-expect-error i dont know why but yea
       { error: "Error creating checkout session", details: error.message },
       { status: 500 }
     );
