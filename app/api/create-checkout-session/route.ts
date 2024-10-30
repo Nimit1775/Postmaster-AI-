@@ -1,6 +1,4 @@
-import { error } from "console";
-import { Quando } from "next/font/google";
-import { NextResponse } from "next/server";
+/*import { NextResponse } from "next/server";
 import Stripe from  'stripe';
   
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!  , {
@@ -32,4 +30,4 @@ export async function POST(req: Request) {
     }catch(error){
 
     }
-}
+}*/
